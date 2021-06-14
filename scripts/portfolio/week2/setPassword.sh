@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Delete old password
-oldPassword="$(cat foldername.txt)"
+if [ -f "foldername.txt" ]; then
+    oldPassword="$(cat foldername.txt)"
+fi
 if [ -d "$oldPassword" ]; then
     rm -rf "$oldPassword"
 fi
