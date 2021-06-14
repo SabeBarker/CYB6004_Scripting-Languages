@@ -1,9 +1,11 @@
 #!/bin/bash
 
+# Set bash colour variables
 RED="\e[31m"
 GREEN="\e[32m"
 ENDCOLOUR="\e[0m"
 
+# Set option variable to 0 to enter while loop
 option=0
 
 # Ask for password to access menu
@@ -24,19 +26,24 @@ if [ $? -eq 0 ]; then
         case $option in
 
             1)
+	      # Execute folder maker script
               bash foldermaker.sh
               ;;
             2)
+              # Execute folder copier script
               bash foldercopier.sh
               ;;
             3)
+              # Execute set password script
               bash setPassword.sh
               ;;
             4)
+              # Exit menu
 	      echo "Exiting..."
               exit 0
               ;;
             *)
+              # Inform user of invalid input
               echo "Invalid Option! Please try again..."
         esac
     done
