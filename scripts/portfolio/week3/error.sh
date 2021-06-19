@@ -1,5 +1,10 @@
 #!/bin/bash
 
+##################################
+#	       NOTE!      	 #
+# Errors fixed in fixed_error.sh #
+##################################
+
 secret='shhh' #Don't tell anyone!
 
 #if the user types in the correct secret, tell them they got it right!
