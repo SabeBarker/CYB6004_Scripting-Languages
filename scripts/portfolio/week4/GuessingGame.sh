@@ -25,7 +25,7 @@ getNumber()
             read -p "$1: "         
         fi
     done
-    echo "Correct!"
+    echo "Right!" # Changed Correct! to Right! in week5 content
 }
 
 getNumber "Please type a number between 1 and 100" 1 100
